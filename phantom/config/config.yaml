@@ -1,0 +1,30 @@
+# PHANTOM OSINT Configuration
+
+# API Settings
+api:
+  timeout: 5
+  retries: 2
+  rate_limit: 0.01
+
+# Threading
+threading:
+  username_scan_threads: 10
+  default_threads: 10
+  max_threads: 50
+
+# API Keys (set via environment variables)
+api_keys:
+  shodan: SHODAN_API_KEY
+  abuseipdb: ABUSEIPDB_API_KEY
+  ipqualityscore: IPQS_API_KEY
+
+# Output
+output:
+  colors: true
+  verbose: false
+  table_format: grid
+
+# Database
+database:
+  sites_count: 600
+  update_interval: 86400
